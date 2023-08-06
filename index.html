@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- // ℂ𝕣𝕖𝕒𝕥𝕖𝕕 𝔹𝕪 𝕄𝕒𝕣𝕨𝕒𝕟 𝕄𝕒𝕘𝕕𝕪 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav class="mt-5">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="nav-logo " >
+                        <a class="navbar-brand  text-white" href="index.html" >
+                            <img src="image/logo2x.png" class="w-25 me-2" alt="logo" > 
+                            Weather 
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav m-auto">
+                          <li class="nav-item me-5 active">
+                            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item me-5">
+                            <a class="nav-link text-white" href="#">News</a>
+                          </li>
+                          <li class="nav-item me-5">
+                            <a class="nav-link text-white" href="#">Live Cameras</a>
+                          </li>
+                          <li class="nav-item me-5">
+                            <a class="nav-link text-white" href="#">Photos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    
+              </nav>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container ">
+
+            <div class="form-items d-flex justify-content-center">
+                <div class="form-group col-8  me-2 mt-5">
+                    <input type="search" class="form-control rounded-4" id="search" aria-describedby="emailHelp" placeholder="Find Your Location...">
+                  </div>
+      
+            </div>
+
+
+          <div id="weather-content" class=" weather-content d-flex col-md-12 rounded-2"> 
+
+          </div>
+
+    </div>
+    
+</main>
+
+<footer>
+    <div class="container">
+        <div div class="footer-subscribe" >
+            <div class="form-items d-flex w-100">
+                <div class="form-group col-10 me-2 mt-5">
+                    <input type="email" class="form-control  rounded-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email To Subscribe...">
+                  </div>
+      
+                  <button type="submit" class="btn btn-primary rounded-4  col-2 mt-5">Subscribe</button>
+            </div>
+
+
+            <div class="footer-icons d-flex justify-content-center  mt-5">
+                        <div>
+                            <a href="https://www.facebook.com" target="_blank" class="me-4 "><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com" target="_blank" class="me-4"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.twitter.com" target="_blank" class="me-4"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+            </div>
+
+            <p class="text-center p-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+            
+
+        </div>
+    </div>
+</footer>
+
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+<!--             <div class="today col-md-4 col-sm-12 rounded-2">
+                <div class="today-header rounded-2" >
+                    <p>Wednesday</p>
+                    <p>2August</p>
+                </div>
+                <div class="today-details ms-4 mt-3 text-center ">
+                    <p id="governorate" > Cairo </p>
+                    <h1 id="weather-degree" >
+                        28°C 
+
+                    </h1>
+                    <p  class="text-primary">Clear</p>
+                    
+                    <ul class="d-flex justify-content-evenly">
+                        <li><i class="fa-solid fa-umbrella"></i>20%</li>
+                        <li><i class="fa-solid fa-wind"></i>18km/h</li>
+                        <li><i class="fa-solid fa-earth-africa"></i>East</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="tomorrow col-md-4 col-sm-12 rounded-2">
+                <div class="tomorrow-header">
+                    <p>Friday</p>
+                </div>
+                <div class="tomorrow-details text-center mt-3">
+                    <img src="image/113.png" alt="Sunny" class="mb-4">
+                    <h4 id="max" class="text-white fw-bolder">42­°C</h4>
+                    <p id="min">25.3°C</p>
+                    <p class="text-primary mt-5">Sunny</p>
+
+
+                </div>
+            </div>
+            <div class="after-tomorrow col-sm-12 col-md-4 rounded-2">
+                <div class="after-tomorrow-header p-1">
+                    <p class="text-center">Saturday</p>
+                </div>
+                <div class=" after-tomorrow-details text-center mt-3">
+                    <img src="image/113.png" alt="Sunny" class="mb-4">
+                    <h4 id="max" class="text-white fw-bolder">42­°C</h4>
+                    <p id="min">25.3°C</p>
+                    <p class="text-primary mt-5">Sunny</p>
+
+
+                </div>
+            </div> -->
