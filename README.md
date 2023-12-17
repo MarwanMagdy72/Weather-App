@@ -12,6 +12,8 @@ This is a simple weather web application that allows users to check the current 
 - CSS
 - Bootstrap
 - JavaScript
+## Live Demo
+https://marwanmagdy72.github.io/Weather-App/ add this as a demo
 
 ## How to Use
 1. Clone the repository to your local machine.
