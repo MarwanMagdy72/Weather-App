@@ -18,7 +18,7 @@ function displayCurrent(a, t) {
         var e = new Date(t.last_updated.replace(" ", "T"));
         let todayContent = 
         `
-        <div class="today col-md-4 col-sm-12 ">
+        <div class="today col-md-12 col-sm-12    mb-1  px-3">
             <div class="today-header " >
                 <p>${days[e.getDay()]}</p>
                 <p>${e.getDate() + monthNames[e.getMonth()]}</p>
@@ -51,7 +51,9 @@ function displayAnother(a) {
         t += 
     
     `
-    <div class="tomorrow col-md-4 col-sm-12 ">
+   
+    
+    <div class="tomorrow col-md-12 col-sm-12 my-1  px-5 ">
     <div class="tomorrow-header">
         <p>${days[new Date(a[e].date.replace(" ", "T")).getDay()]}</p>
     </div>
@@ -61,10 +63,16 @@ function displayAnother(a) {
         <h4 id="max" class="text-white fw-bolder">${a[e].day.maxtemp_c}<sup>o</sup>C</h4>
         <p id="min"> <small>${a[e].day.mintemp_c}<sup>o</sup></small></p>
         <p class="text-primary mt-5">${a[e].day.condition.text}</p>
+        <ul class="d-flex justify-content-evenly text-light">
+        <li><i class="fa-solid fa-umbrella"></i>23%</li>
+        <li><i class="fa-solid fa-wind"></i>25km/h</li>
+        <li><i class="fa-solid fa-earth-africa"></i>East</li>
+    </ul>
 
 
     </div>
 </div>
+    
     `   
  document.getElementById("weather-content").innerHTML += t;
 }
@@ -74,40 +82,3 @@ search("tanta");
 
 
 
-
-
-//////////////////////////////////////////////////////////////////////
-        
-        
-        
-        
-        
-        // `<div class="today forecast">\n
-        //     <div class="forecast-header"  id="today">\n
-        //         <div class="day">${days[e.getDay()]}</div>\n
-        //             <div class=" date">${e.getDate() + monthNames[e.getMonth()]}</div>\n 
-        //                </div> \x3c!-- .forecast-header --\x3e\n   
-        //                 <div class="forecast-content" id="current">\n   
-        //                  <div class="location">${a.name}</div>\n   
-        //                   <div class="degree">\n   
-        //                        <div class="num">${t.temp_c}<sup>o</sup>C</div>\n  
-        //                            \n        <div class="forecast-icon">\n     
-        //                                   <img src="https:${t.condition.icon}" alt="" width=90>\n        </div>\t\n    \n    </div>\n   
-        //                                    <div class="custom">${t.condition.text}</div>\n   
-        //                                     <span><img src="images/icon-umberella.png" alt="">20%</span>\n\t\t\t\t\t\t\t\t<span><img src="images/icon-wind.png" alt="">18km/h</span>\n\t\t\t\t\t\t\t\t<span><img src="images/icon-compass.png" alt="">East</span>\n    </div>\n</div>`;
-        
-//////////////////////////////////////////////////////////////////////
-
-      // `\t<div class="forecast">\n        <div class="forecast-header">\n 
-        //        <div class="day">${days[new Date(a[e].date.replace(" ", "T")).getDay()]}</div>\n 
-        //               </div> \x3c!-- .forecast-header --\x3e\n    
-        //                   <div class="forecast-content">\n 
-        //                   <div class="forecast-icon">\n           
-        //                        <img src="https:${a[e].day.condition.icon}" alt="" width=48>\n            </div>\n    
-        //                                <div class="degree">${a[e].day.maxtemp_c}<sup>o</sup>C</div>\n   
-        //                                         <small>${a[e].day.mintemp_c}<sup>o</sup></small>\n      
-        //                                               <div class="custom">${a[e].day.condition.text}</div>\n        </div>\n        </div>`;
-    
-    
-    
-    
